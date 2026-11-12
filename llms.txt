@@ -29,5 +29,6 @@ https://btcetfflows.com/gamma-research/ - Gamma Research: the Monad risk curator
 https://btcetfflows.com/gamma-research-tvl/ - Gamma Research TVL & APY: $21.71M (DefiLlama) vs $26.0M (TradingStrategy) dual-caliber reconciliation, 72-point history, hourly.
 https://btcetfflows.com/ton-gram-rebrand/ - Toncoin rebranded to Gram (GRAM): 1:1 conversion, migration timeline, what stays the same, and how to buy GRAM.
 https://btcetfflows.com/cbucks-cartoon-money/ - CBUCKS (Cartoon Money) Solana meme coin: price $0.004538, mcap $4.276M, -27.1% in 24h then +9.9% bounce, how to buy.
+https://btcetfflows.com/digest/ - BTC ETF Flows Weekly: free weekly digest — 7-day ETF flow table, treasury company moves, 3 things to watch (Buttondown signup)
 
 Last updated: 2026-11-12
