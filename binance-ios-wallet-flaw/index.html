@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=GTM-5KKRD5M3"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","GTM-5KKRD5M3");</script>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Binance iOS Wallet Flaw (worse_query) — What Happened, Who's Affected, Self-Check &amp; Fix (2026-11-11)</title>
+<meta name="description" content="On 10 November 2026, Binance warned users about a vulnerability in Apple's iOS 26.7.1, 27.0.1 and 27.2 that could let a third-party app read private files…">
+<meta name="keywords" content="Binance iOS wallet flaw, worse_query, WQ Files, iOS 27.2 seed phrase leak, Binance iOS update, crypto wallet iOS sandbox escape, did worse_query affect me">
+<link rel="canonical" href="https://btcetfflows.com/binance-ios-wallet-flaw/">
+<meta property="og:site_name" content="BTC ETF Flows">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://btcetfflows.com/binance-ios-wallet-flaw/">
+<meta property="og:title" content="Binance iOS Wallet Flaw (worse_query) — What Happened, Who's Affected, Self-Check &amp; Fix (2026-11-11)">
+<meta property="og:description" content="On 10 November 2026, Binance warned users about a vulnerability in Apple's iOS 26.7.1, 27.0.1 and 27.2 that could let a third-party app read private files…">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Binance iOS Wallet Flaw (worse_query) — What Happened, Who's Affected, Self-Check &amp; Fix (2026-11-11)">
+<meta name="twitter:description" content="On 10 November 2026, Binance warned users about a vulnerability in Apple's iOS 26.7.1, 27.0.1 and 27.2 that could let a third-party app read private files…">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="site"><div class="wrap head-inner">
+<a class="brand" href="/">BTC ETF Flows</a>
+<nav>
+<a href="/ibit/">IBIT</a>
+<a href="/ibit-etf-flows/">ETF Flows</a>
+<a href="/bitmine-bmnr/">BitMine</a>
+<a href="/bitmine-bmnr-price/">BMNR Price</a>
+<a href="/august-digital-tvl-surge/">August Digital</a>
+</nav>
+</div></header>
+<main class="wrap">
+<article>
+<h1>Binance iOS Wallet Flaw (worse_query): What Happened, Who Is Affected, and How to Check Your iPhone</h1>
+<p><em>Last verified: 2026-11-11 (16:00 UTC). Fix status changes fast — this page tracks the Binance warning, the Apple update, and your self-check steps.</em></p>
+<p>By Crypto Desk.</p>
+<p>On <strong>10 November 2026</strong>, Binance warned users about a vulnerability in <strong>Apple's iOS 26.7.1, 27.0.1 and 27.2</strong> that could let a third-party app read private files stored by <em>other</em> apps — including <strong>crypto seed phrases, private keys and login credentials</strong>. The flaw, publicly disclosed as <strong>"worse_query"</strong>, is an iOS sandbox escape: a malicious (or innocent-looking, sideloaded) app can browse, export, edit and delete other apps' data <strong>without a jailbreak</strong>. No cryptocurrency losses have been confirmed as of this writing, and Apple shipped security updates on 9 November — but whether those notes fully cover this issue is still unclear. This page is the event timeline, the impact analysis, and a step-by-step self-check for your own iPhone.</p>
+<h2>What happened (timeline)</h2>
+<div class="table-wrap"><table><thead><tr><th>Date</th><th>Event</th></tr></thead><tbody><tr><td>~8 Nov 2026</td><td>Researcher <strong>forcequitOS</strong> publishes the PoC exploit code <strong>"worse_query"</strong> on GitHub — a "direct successor to bad_query" that reads other apps' containers via an App Group container; he notes the code is "intended for developers" and says he's giving up the Apple bounty after Apple stalled on responding.</td></tr><tr><td>9 Nov 2026</td><td><strong>Apple releases iOS security updates: iOS 27.2.1, iOS 26.7.3 and iOS 18.7.12</strong>, addressing nine flaws per BleepingComputer. One fixed vulnerability, <strong>CVE-2026-113963</strong> (reported by László Várady, via App Intents), lets an app access sensitive user data — <strong>it is not yet confirmed whether this is the same issue Binance warned about</strong>. A file-manager app built on worse_query, <strong>WQ Files</strong> (by Christoph Kolbicz), is confirmed working on iOS 26.7.1, 27.0.1 and 27.2 via sideloading (AltStore/SideStore).</td></tr><tr><td>10 Nov 2026</td><td><strong>Binance issues its warning</strong> (quoted in full below). BleepingComputer and other outlets report; Hacker News picks it up.</td></tr><tr><td>10–11 Nov 2026</td><td>Security Affairs analysis: "No attacks are reported and no fix is confirmed" in Apple's release notes for the specific issue; Binance and the researcher report <strong>no attacks or data theft</strong> so far.</td></tr></tbody></table></div>
+<h2>What Binance said (verbatim, 2026-11-10)</h2>
+<blockquote><p>"A vulnerability (worse_query) affecting iOS 26.7.1, 27.0.1, and 27.2 allows malicious apps to read local files from other apps, putting seed phrases, private keys, and login credentials at risk across the entire ecosystem. This is an iOS-level issue, not unique to Binance."</p></blockquote>
+<p>Binance's recommendations: install the update immediately as a precaution; <strong>delete unnecessary and untrusted apps</strong>; apply the latest versions for iOS and all apps; <strong>where compromise is suspected, transfer funds to a new wallet created on a clean device and reset all active login sessions</strong>.</p>
+<p><strong>Dual-source check:</strong> the affected iOS versions (26.7.1 / 27.0.1 / 27.2), the PoC name (worse_query), the WQ Files app, the "no confirmed losses" status and the Apple 9 Nov update are independently reported by BleepingComputer (10 Nov) and Security Affairs (10–11 Nov), quoting Binance's own statement and the researcher's GitHub — ✅ sources agree on every load-bearing fact.</p>
+<h2>Who is actually affected</h2>
+<p>All four conditions must be true:</p>
+<ol><li><strong>iPhone on iOS 26.7.1, 27.0.1 or 27.2</strong> (the confirmed-affected versions).</li><li><strong>A crypto app with secrets stored on-device</strong> — the Binance app, any self-custody wallet (Ledger Live, Trust, Exodus, MetaMask iOS…), a 2FA app holding seed-related data.</li><li><strong>A second app with file access capability</strong> — classically a <strong>sideloaded</strong> app (AltStore, SideStore, TestFlight builds, enterprise-certs) like WQ Files, or an untrusted app that created/uses an App Group container. (Apps from the curated App Store are the harder path, but the flaw is an iOS-level sandbox escape, so "I only use the App Store" is not a full defense.)</li><li><strong>That second app ran while the flaw was exploitable.</strong></li></ol>
+<p>If you're on a different iOS version (including the patched 27.2.1 / 26.7.3 / 18.7.12), you're outside the confirmed set. If you never sideload anything and run a current iOS, your practical risk is low — but the fix cost is minutes, so do it anyway.</p>
+<h2>Self-check: 5 steps for your iPhone</h2>
+<ol><li><strong>Check your iOS version.</strong> Settings → General → About → Software Version.</li><li><code>26.7.1</code>, <code>27.0.1</code> or <code>27.2</code> → you're in the affected set; continue.</li><li><code>27.2.1</code>, <code>26.7.3</code>, <code>18.7.12</code> (or anything newer) → patched; still do step 3.</li><li><strong>Update iOS immediately</strong> if you're on an affected version: Settings → General → Software Update → Download and Install. (Note: Apple's release notes don't explicitly name worse_query, so treat "updated" as necessary-but-verify.)</li><li><strong>Audit installed apps.</strong> Settings → General → iPhone Storage: look for apps you don't recognize, and specifically anything installed via <strong>AltStore / SideStore / TestFlight</strong> in the last few weeks. Delete the unnecessary and untrusted ones (per Binance's guidance).</li><li><strong>In the Binance app (or any crypto app):</strong> Settings → Security / Accounts → <strong>reset active login sessions</strong> (device management), and review recent withdrawals and withdrawals <em>requests</em> in your activity log for anything you don't recognize.</li><li><strong>If you suspect compromise, rotate like you mean it:</strong></li><li>Create a <strong>new wallet on a clean device</strong> (a phone that never had the suspicious app).</li><li>Move funds from the old wallet to the new one.</li><li>For the Binance account: log in on the clean device, enable/verify 2FA, reset active sessions, and consider withdrawing to self-custody if the balance is meaningful.</li><li>Do <strong>not</strong> reuse the old recovery seed/keys after a suspected read.</li></ol>
+<h2>Fix status (as of 2026-11-11)</h2>
+<ul><li><strong>Apple:</strong> updates shipped 9 Nov (27.2.1 / 26.7.3 / 18.7.12); the specific worse_query fix is not yet explicitly named in the release notes — <strong>unconfirmed, watch for clarification</strong>.</li><li><strong>Binance:</strong> no confirmed losses; guidance = update + delete untrusted apps + rotate on suspicion.</li><li><strong>Researcher (forcequitOS):</strong> PoC public on GitHub; code "isn't useful by itself" but WQ Files already packages it; no attacks reported.</li><li><strong>Bottom line:</strong> the exploit is public, the versions are known, the patch exists but the coverage is unconfirmed — the 24–72h window after a public PoC is when opportunistic abuse usually appears. The self-check above is cheap; do it now, not next week.</li></ul>
+<p><em>This page is for informational purposes only and does not constitute investment advice (NFA).</em></p>
+<p><strong>[CTA / 变现位]</strong> Move your stack to self-custody or a fresh CEX account: <a href="https://www.binance.com/en/register?ref=GRO_28502_T10SW" rel="noopener">open a Binance account</a>（affiliate） + a hardware wallet. <em>[Ad slot: exchange affiliate / hardware-wallet comparison banner.]</em></p>
+<h2>What Is Not Included</h2>
+<p>This page does not include a confirmed-loss tally (none reported as of verification), the exact scope of CVE-2026-113963 (still unconfirmed as the worse_query fix), or guidance for non-iOS platforms. App-specific checklists beyond Binance are also out of scope.</p>
+<h2>相关内页</h2>
+<ul><li><a href="/polymarket/">Polymarket — what the markets are pricing while you check your wallet</a></li><li><a href="/eqx-tokenized-stocks-hyperliquid/">EQX tokenized stocks on Hyperliquid — 24/7 tokenized exposure, on-chain custody instead of app-local keys</a></li><li><a href="/ondo-finance-mag7x/">Ondo Finance MAG7X — the other way to hold tech exposure without a brokerage app on your iPhone</a></li><li><a href="/binance-wallet-security-basics" class="soon" title="coming soon">Binance wallet security basics (coming soon — long-tail follow-up page)</a></li></ul>
+</article>
+</main>
+<footer>
+<div class="wrap foot-inner">
+<p><strong>BTC ETF Flows</strong> · Data: Farside/DefiLlama/The Block/official filings · NFA — not financial advice · © 2026</p>
+<p>API: <a href="https://api.percall.io" target="_blank" rel="noopener">api.percall.io</a> (keyless, pay-per-call in USDC)</p>
+<p class="ai-note">For AI crawlers: <a href="/llms.txt">llms.txt</a> · <a href="/sitemap.xml">sitemap.xml</a> — GPTBot, OAI-SearchBot, PerplexityBot, ClaudeBot &amp; Googlebot welcome (see robots.txt)</p>
+</div>
+</footer>
+</body>
+</html>

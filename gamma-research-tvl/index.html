@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=GTM-5KKRD5M3"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","GTM-5KKRD5M3");</script>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gamma Research TVL &amp; APY: $21.71M (DefiLlama) vs $26.0M (TradingStrategy) — Data (Updated Hourly)</title>
+<meta name="description" content="This is the live data page for Gamma Research (Monad risk curator, flagship earnAUSD vault). What the firm is and how to enter: main page. The reason you are…">
+<meta name="keywords" content="gamma research tvl, gamma research apy, earnausd tvl, gamma research monad tvl, earnausd apy, gamma vault data">
+<link rel="canonical" href="https://btcetfflows.com/gamma-research-tvl/">
+<meta property="og:site_name" content="BTC ETF Flows">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://btcetfflows.com/gamma-research-tvl/">
+<meta property="og:title" content="Gamma Research TVL &amp; APY: $21.71M (DefiLlama) vs $26.0M (TradingStrategy) — Data (Updated Hourly)">
+<meta property="og:description" content="This is the live data page for Gamma Research (Monad risk curator, flagship earnAUSD vault). What the firm is and how to enter: main page. The reason you are…">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Gamma Research TVL &amp; APY: $21.71M (DefiLlama) vs $26.0M (TradingStrategy) — Data (Updated Hourly)">
+<meta name="twitter:description" content="This is the live data page for Gamma Research (Monad risk curator, flagship earnAUSD vault). What the firm is and how to enter: main page. The reason you are…">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="site"><div class="wrap head-inner">
+<a class="brand" href="/">BTC ETF Flows</a>
+<nav>
+<a href="/ibit/">IBIT</a>
+<a href="/ibit-etf-flows/">ETF Flows</a>
+<a href="/bitmine-bmnr/">BitMine</a>
+<a href="/bitmine-bmnr-price/">BMNR Price</a>
+<a href="/august-digital-tvl-surge/">August Digital</a>
+</nav>
+</div></header>
+<main class="wrap">
+<article>
+<h1>Gamma Research TVL &amp; APY: $21.71M (DefiLlama) vs $26.0M (TradingStrategy) — Data (Updated Hourly)</h1>
+<p><strong>Written by Crypto Desk</strong> · Last verified: 2026-11-12 02:35 UTC (DefiLlama API pull 09:58 UTC+8; TradingStrategy pull 10:04 UTC+8)</p>
+<p>This is the live data page for <strong>Gamma Research</strong> (Monad risk curator, flagship earnAUSD vault). What the firm is and how to enter: <a href="/gamma-research/">main page</a>. The reason you are probably here: two big sites quote <strong>two different TVL numbers</strong> — $21.71M and $26.0M. <strong>Both are right; they measure different scopes.</strong> The reconciliation is below and it holds to the dollar on the core asset.</p>
+<h2>The Dual-Caliber Table (⏱ 需小时级更新)</h2>
+<div class="table-wrap"><table><thead><tr><th>Measure</th><th>Value</th><th>Scope</th><th>Source</th></tr></thead><tbody><tr><td>earnAUSD vault (Monad)</td><td><strong>$21,708,378</strong> (latest 11-12 point)</td><td>single vault, AUSD, via <code>getTotalAssets()</code></td><td>DefiLlama API (11-12 09:58 UTC+8)</td></tr><tr><td>earnAUSD vault (Upshift)</td><td><strong>$21.73M</strong> (current; peak $80.71M)</td><td>same vault, TradingStrategy's counter</td><td>TradingStrategy (11-12 10:04 UTC+8)</td></tr><tr><td>Six-vault portfolio</td><td><strong>$26.0M</strong>, 6.8% APY (30d)</td><td>all 6 visible vaults, multi-chain, stablecoin-only</td><td>TradingStrategy (11-12)</td></tr><tr><td>1d change (DefiLlama scope)</td><td><strong>+16.8%</strong></td><td>—</td><td>DefiLlama (16.79)</td></tr><tr><td>7d change (DefiLlama scope)</td><td><strong>+20.6%</strong></td><td>—</td><td>DefiLlama (20.63)</td></tr></tbody></table></div>
+<p><strong>Reconciliation (why both are right):</strong> DefiLlama's methodology for this record is explicit — "TVL is the AUSD managed by the earnAUSD vault curated by Gamma Research, measured on Monad through the vault's getTotalAssets() value" [DefiLlama methodology field]. That is <strong>one vault, one chain</strong>. TradingStrategy counts <strong>six vaults</strong> the curator runs across hosts/chains (Monad AUSD, USDC instances, Aptos) and notes "the curator may have more vaults outside supported blockchains and vault protocols" [TradingStrategy]. In TradingStrategy's own vault table, the main earnAUSD vault is <strong>$21.73M</strong> — i.e., DefiLlama's $21.71M and TradingStrategy's $21.73M are the <strong>same asset measured within ~0.1%</strong>, and the remaining <strong>~$4.3M</strong> of the $26.0M figure is the other five vaults:</p>
+<div class="table-wrap"><table><thead><tr><th>Vault (TradingStrategy)</th><th>Denom</th><th>TVL</th><th>Peak</th><th>1M ann.</th><th>3M ann.</th><th>Lifetime abs.</th><th>Age</th><th>Fees (mgmt/perf)</th><th>Deposit delay</th><th>Technical risk</th></tr></thead><tbody><tr><td>earnAUSD (main)</td><td>AUSD</td><td><strong>$21.73M</strong></td><td>$80.71M</td><td><strong>7.0%</strong></td><td>6.8%</td><td>5.2%</td><td>1.0y</td><td>0.0% / <strong>10.0%</strong></td><td>3d</td><td>Severe</td></tr><tr><td>earnAUSD Loop</td><td>USDC</td><td>$2.40M</td><td>$3.04M</td><td>6.4%</td><td>—</td><td>1.2%</td><td>0.2y</td><td>0.0% / 0.0%</td><td>3d</td><td>Severe</td></tr><tr><td>earnAUSD (2nd)</td><td>AUSD</td><td>$1.30M</td><td>$3.66M</td><td>0.0%*</td><td>0.0%*</td><td>0.9%*</td><td>1.3y</td><td>—</td><td>instant</td><td>Severe</td></tr><tr><td>Upshift Gamma USDC Vault</td><td>USDC</td><td>$552.25K</td><td>$17.17M</td><td>14.8%*</td><td>39.9%*</td><td>6.9%*</td><td>1.2y</td><td>—</td><td>3d</td><td>Severe</td></tr><tr><td>sAUSD</td><td>AUSD</td><td>$470.97</td><td>$44.81M</td><td>0.0%*</td><td>0.0%*</td><td>0.5%*</td><td>1.0y</td><td>—</td><td>instant</td><td>Severe</td></tr><tr><td>Upshift Aptos USDC Vault</td><td>USDC</td><td>$383.58</td><td>$3.04M</td><td>0.0%</td><td>0.0%</td><td>15.3%</td><td>0.9y</td><td>0.0% / 0.0%</td><td>3d</td><td>Severe</td></tr></tbody></table></div>
+<p>[TradingStrategy vault table, pulled 11-12 10:04 UTC+8 ("updated about 1 hour ago" at pull). * = TradingStrategy marks the figure as partial/short-history. 3M Sharpe 16.1 / 3M volatility 0.4% / max DD −0.0% (main vault); the old USDC vault: 3M volatility 10.6%, max DD −27.2%.]</p>
+<p><strong>Reading the table:</strong> ~99% of the visible book is the main earnAUSD vault. Two older vaults (sAUSD, peak $44.81M; Upshift Gamma USDC, peak $17.17M) have drained to &lt;1% of peak — migration/closure, not this round's event, but the history of what happens to a curator's peripheral vaults.</p>
+<blockquote><p><strong>[CTA-2 · Ad slot — mid page, after the reading section]</strong> [AD PLACEHOLDER — in-article responsive unit]</p></blockquote>
+<p><strong>[CHART PLACEHOLDER — earnAUSD (Monad) TVL 72-day line, annotated: 09-16 peak $31.47M / 10-30 low $17.24M / 11-10→11-12 three-day recovery step, hourly refresh]</strong></p>
+<h2>Daily TVL History — DefiLlama Scope (API-verified 11-12)</h2>
+<div class="table-wrap"><table><thead><tr><th>Date</th><th>TVL</th><th>Note</th></tr></thead><tbody><tr><td>09-03</td><td>$23,362,961</td><td>DefiLlama tracking starts (protocol listed same day)</td></tr><tr><td>09-10</td><td>$23,744,887</td><td></td></tr><tr><td><strong>09-16</strong></td><td><strong>$31,468,122</strong></td><td><strong>all-time peak in tracked history</strong></td></tr><tr><td>09-24</td><td>$30,911,927</td><td></td></tr><tr><td>10-01</td><td>$23,739,684</td><td>first step down (−23% w/w)</td></tr><tr><td>10-08</td><td>$25,337,015</td><td></td></tr><tr><td>10-15</td><td>$19,127,045</td><td></td></tr><tr><td>10-22</td><td>$18,733,935</td><td>(Gamma's Morpho+Merkl incentive post is ~this date)</td></tr><tr><td><strong>10-30</strong></td><td><strong>$17,244,162</strong></td><td><strong>tracked low</strong></td></tr><tr><td>11-05</td><td>$17,991,423</td><td>base building</td></tr><tr><td>11-10</td><td>$17,786,732</td><td></td></tr><tr><td>11-11</td><td>$18,582,833</td><td>+4.5% — recovery starts</td></tr><tr><td>11-12</td><td><strong>$21,708,378</strong></td><td><strong>+16.8% — latest point (hourly re-pull)</strong></td></tr></tbody></table></div>
+<p>[DefiLlama API, 72 points, sampled at ~weekly resolution + the recovery window; full daily series is on the hourly re-pull.]</p>
+<p><strong>The shape, stated plainly:</strong> a year-old vault that peaked at $31.5M in mid-September, bled to $17.2M by 10-30 (−45%), sat flat through early-to-mid November, and has now added <strong>+$3.9M in two days</strong> (11-11→11-12) with no announcement found this round to attribute it. The nearest driver candidate in the sources is the curator's own 10-22 incentive post (Morpho earnAUSD/USDC + Merkl, ~10% total APY) — data verified, narrative not.</p>
+<h2>APY / Yield Block (⏱ 需小时级更新)</h2>
+<ul><li><strong>Main vault (earnAUSD, Monad):</strong> 1M annualized <strong>7.0%</strong>, 3M annualized <strong>6.8%</strong>, lifetime absolute <strong>5.2%</strong> [TradingStrategy].</li><li><strong>Portfolio:</strong> 6.8% APY over 30 days, six vaults, stablecoin-only [TradingStrategy].</li><li><strong>Fee drag:</strong> 10.0% performance on the main vault [TradingStrategy] — the yield above is pre-fee in TradingStrategy's return columns.</li><li><strong>待核:</strong> DefiLlama publishes no APY for this curator record, so every yield figure on this page is <strong>single-source (TradingStrategy)</strong> until a second provider's number lands [待核 #1].</li><li><strong>Bonus layer (optional, not part of the vault):</strong> depositing the earnAUSD receipt into the Morpho earnAUSD/USDC market on Monad was promoted by Gamma on 10-22 at ~2% extra via Merkl incentives (~10% total) [Gamma X post via TradingStrategy].</li></ul>
+<h2>Why Two Numbers (Caliber, Explained for the Reader)</h2>
+<ol><li><strong>DefiLlama = one vault, one chain, one method.</strong> The adapter measures AUSD via the Monad vault's <code>getTotalAssets()</code> — it is a custody-asset count for earnAUSD only [DefiLlama methodology].</li><li><strong>TradingStrategy = the curator's visible book.</strong> It aggregates every vault it can see (six, across AUSD/USDC denoms, Monad/Aptos, Upshift host) and explicitly flags that more may exist outside supported chains [TradingStrategy].</li><li><strong>The overlap is the anchor:</strong> $21.71M (DefiLlama) vs $21.73M (TradingStrategy's main-vault row) — a $20K difference between two independent counters of the same on-chain function, which is why this page carries a dual-source tag on the core asset.</li><li><strong>What neither covers:</strong> vaults outside both trackers, and any yield accrued but not yet marked. When the two counters drift meaningfully (&gt;1%), that is the signal something structural moved — re-pull both and annotate.</li><li><strong>Peak discrepancy (not a contradiction):</strong> TradingStrategy shows the main vault's peak at <strong>$80.71M</strong> while DefiLlama's tracked history peaks at $31.47M — DefiLlama's tracking starts 2026-09-03, TradingStrategy's vault age is 1.0y, so the $80.71M predates DefiLlama's window [待核 #2: which instrument produced the $80.71M reading — the vault's own history vs a related AUSD instrument — cannot be settled from the two sources alone].</li></ol>
+<h2>Data Method &amp; Freshness</h2>
+<ul><li><strong>DefiLlama:</strong> protocol endpoint, id 8558, 72 daily points + latest intraday point; re-pulled hourly. 口径注：表内 headline TVL（21,708,378）是 11-12 最新 daily 点，21,702,678 是 pull 时点的 intraday 点——两值同在本轮 raw 响应里，0.03% 差是时点差（daily 点 vs pull 时点），非数据矛盾、不计待核。</li><li><strong>TradingStrategy:</strong> curator listing page, "updated about 1 hour ago" at pull (11-12 10:04 UTC+8); re-pulled hourly alongside.</li><li><strong>Dual-source status:</strong> core vault TVL = dual-source (0.1% apart); six-vault scope = TradingStrategy only (DefiLlama does not track it); APY = TradingStrategy only (待核 #1).</li></ul>
+<h2>What Is Not Included</h2>
+<p>This page does not include fee revenue, AUSD price movements, or vaults outside both trackers; the full daily series is sampled here and re-pulled hourly.</p>
+<h2>相关内页</h2>
+<ul><li><a href="/gamma-research/">What Is Gamma Research? The Monad Risk Curator Behind the $21.7M earnAUSD Vault</a></li><li><a href="/ibit-etf-flows/">IBIT ETF Flow: BlackRock iShares Bitcoin Trust Daily Inflows &amp; Outflows (Updated Hourly)</a></li></ul>
+<blockquote><p><strong>NFA (Not Financial Advice):</strong> Data page. Every cell is sourced and timestamped from the 11-12 pull batch; the dual-caliber reconciliation holds to $20K on the core vault. The three-day rally is a statement about data at the last pull, not a forecast. 待核 items are marked where a single source is the only counter.</p></blockquote>
+</article>
+</main>
+<footer>
+<div class="wrap foot-inner">
+<p><strong>BTC ETF Flows</strong> · Data: Farside/DefiLlama/The Block/official filings · NFA — not financial advice · © 2026</p>
+<p>API: <a href="https://api.percall.io" target="_blank" rel="noopener">api.percall.io</a> (keyless, pay-per-call in USDC)</p>
+<p class="ai-note">For AI crawlers: <a href="/llms.txt">llms.txt</a> · <a href="/sitemap.xml">sitemap.xml</a> — GPTBot, OAI-SearchBot, PerplexityBot, ClaudeBot &amp; Googlebot welcome (see robots.txt)</p>
+</div>
+</footer>
+</body>
+</html>

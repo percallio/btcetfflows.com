@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=GTM-5KKRD5M3"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","GTM-5KKRD5M3");</script>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What Is Papertrade? The Hyperliquid-Era Derivatives Protocol, Fees &amp; the PSTR Token</title>
+<meta name="description" content="Papertrade is a derivatives protocol in the Hyperliquid ecosystem whose fee numbers jumped onto the DefiLlama rankings this week: ≈$1.01M in fees in the last…">
+<meta name="keywords" content="Papertrade, Papertrade protocol, Papertrade fees, PSTR PaperStrategy, Papertrade how it works, PAPER token, Hyperliquid derivatives">
+<link rel="canonical" href="https://btcetfflows.com/papertrade/">
+<meta property="og:site_name" content="BTC ETF Flows">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://btcetfflows.com/papertrade/">
+<meta property="og:title" content="What Is Papertrade? The Hyperliquid-Era Derivatives Protocol, Fees &amp; the PSTR Token">
+<meta property="og:description" content="Papertrade is a derivatives protocol in the Hyperliquid ecosystem whose fee numbers jumped onto the DefiLlama rankings this week: ≈$1.01M in fees in the last…">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="What Is Papertrade? The Hyperliquid-Era Derivatives Protocol, Fees &amp; the PSTR Token">
+<meta name="twitter:description" content="Papertrade is a derivatives protocol in the Hyperliquid ecosystem whose fee numbers jumped onto the DefiLlama rankings this week: ≈$1.01M in fees in the last…">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="site"><div class="wrap head-inner">
+<a class="brand" href="/">BTC ETF Flows</a>
+<nav>
+<a href="/ibit/">IBIT</a>
+<a href="/ibit-etf-flows/">ETF Flows</a>
+<a href="/bitmine-bmnr/">BitMine</a>
+<a href="/bitmine-bmnr-price/">BMNR Price</a>
+<a href="/august-digital-tvl-surge/">August Digital</a>
+</nav>
+</div></header>
+<main class="wrap">
+<article>
+<h1>What Is Papertrade? The Derivatives Protocol Behind a 778% Week of Fees — and the PSTR Token</h1>
+<p><em>Last verified: 2026-11-11 (16:00 UTC). Fee data below is refreshed from DefiLlama; the week-over-week figures need daily-level updates.</em></p>
+<p>By Crypto Desk.</p>
+<p>Papertrade is a derivatives protocol in the Hyperliquid ecosystem whose fee numbers jumped onto the DefiLlama rankings this week: <strong>≈$1.01M in fees in the last 24 hours (up ~99% day-over-day), ≈$7.8M over 7 days (+779%), and ≈$45.4M over 30 days (+25% vs the prior 30 days)</strong>. Attached to it is a deliberately contrarian token story — PSTR (PaperStrategy) — where the protocol's treasury <em>loses money on purpose</em> to mint a fee-claim token, staking yield, and burning the tradable one. Here's what Papertrade is, how the mechanism works, what the numbers show, and where the risks sit.</p>
+<h2>What is Papertrade?</h2>
+<ul><li><strong>Category:</strong> Derivatives (DefiLlama), running as an "Off Chain" category on DefiLlama with its token side on Hyperliquid L1 / HyperEVM — i.e. it is part of the Hyperliquid stack, the same infrastructure family as the spot builder DEXes.</li><li><strong>Product:</strong> a derivatives terminal where positions execute with <strong>a fixed-rate discount locked in at execution</strong> (the mechanism DefiLlama records for the protocol's fees). In practice: you get a deterministic, pre-agreed execution rate at order time instead of chasing a moving book.</li><li><strong>The new "terminal":</strong> trade on Papertrade with the same tooling the treasury uses — one-click trading, take-profits and stop-losses that run without you watching, and delta-neutral pairs and "engines" (docs: <code>docs.paperstrategy.xyz</code>).</li></ul>
+<h2>The PAPER / PSTR mechanism (the unusual part)</h2>
+<p>From PaperStrategy's own documentation:</p>
+<ol><li><strong>PAPER cannot be bought.</strong> Papertrade's PAPER token is <em>minted only from trading losses</em> — there is no pool to buy from and no way to deposit into an LP. The only way to acquire PAPER is to lose money on Papertrade, deliberately or not.</li><li><strong>Staked PAPER earns protocol revenue in USDC.</strong> It is an income-producing asset most people will never hold, because acquiring it takes capital, time and method.</li><li><strong>PSTR is the tradeable proxy.</strong> PSTR (PaperStrategy) is a token on HyperEVM built on top of Papertrade. Every buy <em>and</em> sell pays a <strong>10% trade tax</strong>: one tenth goes to the team (paid in HYPE), the rest funds a treasury. The treasury runs Papertrade accounts that <strong>lose USDC in a controlled way to acquire PAPER at the lowest possible cost, then stake all of it</strong>. The staking yield is used to <strong>buy PSTR back on the market and burn it</strong>.</li><li><strong>The loop:</strong> the more PSTR trades → the more PAPER the treasury holds → the more yield → the more PSTR gets burned. Supply is 1,000,000,000 PSTR, all in the pool at launch — no presale, no team tokens, no airdrop.</li><li><strong>Launch window mechanics:</strong> the tax opens at 99% and drops one point per minute to 10% after 89 minutes — a designed incentive to trade early. Liquidity is held by a timelock requiring a 30-day public notice to withdraw; the team runs a V1 multisig with on-chain public actions.</li></ol>
+<p>What PSTR is <em>not</em>: it is not a share of the treasury, it gives no direct claim on the treasury's PAPER or its yield — the only link is the buyback-burn.</p>
+<h2>Fee data (2026-11-11) — dual-source checked</h2>
+<p>DefiLlama protocol page (fetched 11-11) vs DefiLlama API (fetched 11-11, minutes apart):</p>
+<div class="table-wrap"><table><thead><tr><th>Metric</th><th>Page snapshot</th><th>API (live)</th><th>Verdict</th></tr></thead><tbody><tr><td>Fees, last 24h</td><td>$1,009,927</td><td>$1,009,835</td><td>✅ agree</td></tr><tr><td>Prior 24h</td><td>$507,570</td><td>$507,570</td><td>✅ agree</td></tr><tr><td>24h change</td><td>+98.97%</td><td>+98.95%</td><td>✅ agree</td></tr><tr><td>30-day fees</td><td>$45,379,738</td><td>$45,379,738</td><td>✅ agree</td></tr><tr><td>7d change (vs prior 7d)</td><td>+25.31%</td><td>— (page-only field)</td><td>single source</td></tr><tr><td>7-day cumulative growth</td><td>+778.95%</td><td>— (page-only field)</td><td>single source</td></tr><tr><td>All-time fees</td><td>—</td><td>$73,237,130</td><td>single source (API)</td></tr></tbody></table></div>
+<p>Reading: the protocol went from ~$500k/day to ~$1M/day in a single day, on a 30-day base of $45M — an all-time cumulative $73M. That is a protocol with real, fast-growing usage, not a numbers game. (Fees ≠ revenue: a share is paid out as the PAPER/PSTR mechanism above, and DefiLlama notes the exact on-chain breakdown isn't available.)</p>
+<h2>How to use Papertrade</h2>
+<ol><li><strong>Docs first:</strong> <code>docs.paperstrategy.xyz</code> — terminal setup, "orders, pairs and engines", fees and safety.</li><li><strong>Fund with USDC/HYPE</strong> in a Hyperliquid-compatible wallet (HyperEVM side).</li><li><strong>Trade the terminal:</strong> one-click positions, TP/SL that persist, delta-neutral pairs.</li><li><strong>If you're playing the token loop:</strong> buy PSTR (10% tax applies to you too), understand you are funding the loss-engine, and that your return path is the burn — not a dividend.</li><li><strong>Track the fees</strong> here and on DefiLlama; a fee spike is the leading indicator that the loop is working (or that activity is concentrating).</li></ol>
+<h2>Risks</h2>
+<ul><li><strong>Off-chain accounting.</strong> DefiLlama classifies the protocol "Off Chain" and flags that the exact fee breakdown isn't available on-chain — trust in the reported numbers is higher than in a fully transparent vault.</li><li><strong>The loss-engine is contrarian.</strong> The treasury's edge is <em>controlled losing</em>. If the strategy that mints PAPER underperforms, the buyback pressure on PSTR weakens while the 10% tax keeps taking.</li><li><strong>Tax on both sides.</strong> 10% on buys <em>and</em> sells is a large cost for active traders; it is only "fair" if the burn loop delivers.</li><li><strong>Concentration risk.</strong> Fees +779% in 7 days can mean one or a few large players, not a broad user base — check the holder/tx concentration before extrapolating.</li><li><strong>Ecosystem beta.</strong> PSTR lives on HyperEVM; HYPE drawdowns drag the whole stack.</li></ul>
+<p><em>This page is for informational purposes only and does not constitute investment advice (NFA).</em></p>
+<p><strong>[CTA / 变现位]</strong> Try the Papertrade terminal — or get HYPE/USDC via a [affiliate: exchange] first and compare the tax-adjusted math. <em>[Ad slot: exchange affiliate / DeFi protocol banner.]</em></p>
+<h2>What Is Not Included</h2>
+<p>This page does not include PSTR's market price or chart, holder/tx concentration data, PAPER staking yield figures, or an audit of the protocol's contracts — check DefiLlama and the project docs for those.</p>
+<h2>相关内页</h2>
+<ul><li><a href="/elysium/">Elysium — the new Hyperliquid L2 where the same ecosystem is launching at speed</a></li><li><a href="/eqx-tokenized-stocks-hyperliquid/">EQX tokenized stocks on Hyperliquid — the other side of the 24/7 trade</a></li><li><a href="/spin-spin-agentfi-robinhood/">Spin (SPIN) — the AgentFi token racing on Robinhood chain</a></li><li><a href="/morpho-fees" class="soon" title="coming soon">Morpho fees surge — another protocol whose DefiLlama numbers moved this week</a></li></ul>
+</article>
+</main>
+<footer>
+<div class="wrap foot-inner">
+<p><strong>BTC ETF Flows</strong> · Data: Farside/DefiLlama/The Block/official filings · NFA — not financial advice · © 2026</p>
+<p>API: <a href="https://api.percall.io" target="_blank" rel="noopener">api.percall.io</a> (keyless, pay-per-call in USDC)</p>
+<p class="ai-note">For AI crawlers: <a href="/llms.txt">llms.txt</a> · <a href="/sitemap.xml">sitemap.xml</a> — GPTBot, OAI-SearchBot, PerplexityBot, ClaudeBot &amp; Googlebot welcome (see robots.txt)</p>
+</div>
+</footer>
+</body>
+</html>

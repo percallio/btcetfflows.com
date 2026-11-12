@@ -1,7 +1,7 @@
 # BTC ETF Flows
-Institutional digital-asset flow tracking — ETF flows, treasury companies, on-chain data, updated hourly.
+Institutional digital-asset flow tracking — ETF flows, treasury companies, market & exchange events, Solana ecosystem data, updated hourly.
 
-https://btcetfflows.com/ - Home: BTC ETF flow pages and ETH treasury company pages, data-source disclosure.
+https://btcetfflows.com/ - Home: BTC ETF flow pages, ETH treasury company pages, market & exchange event pages, and Solana ecosystem pages, with data-source disclosure.
 https://btcetfflows.com/ibit/ - What is IBIT: BlackRock's iShares Bitcoin Trust (0.25% fee, Nasdaq) and the 2,252 BTC + 72,210 ETH transfer to Coinbase.
 https://btcetfflows.com/ibit-etf-flows/ - Daily fund-level US spot BTC ETF flows (Farside): IBIT printed seven straight outflow days, 11-02 to 11-10; refreshed hourly.
 https://btcetfflows.com/ibit-2252-btc-transfer-timeline/ - The ~$318.36M ETF wallet to Coinbase transfer in ~30 minutes: event timeline, redemption/custody mechanism, impact scope.
@@ -10,5 +10,24 @@ https://btcetfflows.com/bitmine-bmnr-fy2026-loss/ - Why BitMine lost $6.313B in 
 https://btcetfflows.com/bitmine-bmnr-vs-august-digital/ - BitMine (BMNR) vs August Digital: ETH treasury stock vs on-chain USDC vault curator, side-by-side comparison.
 https://btcetfflows.com/bitmine-bmnr-price/ - BMNR stock price ($19.24, +6.42% on 11-11), 52-week range, ETH holdings vs the 5% cap — live data, hourly.
 https://btcetfflows.com/august-digital-tvl-surge/ - August Digital: non-custodial USDC lending vaults on Morpho/Monad; TVL $12.6M to $21.0M (+66.7% in 24h, all-time high).
+https://btcetfflows.com/binance-3rd-community-appreciation/ - Binance 3rd Community Appreciation (2026): hold-to-earn USD1/USDe/KGST campaign, payouts 11-20/11-27/12-04, up to 10%/10%/15% APR.
+https://btcetfflows.com/binance-6-3b-north-korea-heist/ - Binance $6.3B North Korea heist (10-29): largest crypto theft in history, 10 chains, FBI indictment, full timeline and self-check guide.
+https://btcetfflows.com/binance-ios-wallet-flaw/ - Binance iOS wallet flaw (worse_query): iOS sandbox escape exposing other apps' private files incl. seed phrases; timeline, impact, self-check and fix.
+https://btcetfflows.com/across-protocol-domain-hijack-348k/ - Across Protocol domain hijack: across.to pointed at a drainer ~3h on 11-10, 9 wallets across 5 chains lost $348K.
+https://btcetfflows.com/ankr-bridge-forged-receipts-304k/ - Ankr Bridge forged receipts: $304,500 drained with five cryptographically valid but unspent-checked withdrawal receipts (11-09).
+https://btcetfflows.com/matrix-mtx/ - Matrix (MTX): BNB Chain L1 execution-layer rollup token, KuCoin + Bitget listings 11-11, price $2.97–2.99 and how to buy.
+https://btcetfflows.com/polymarket/ - Polymarket: leading prediction market, live top-market odds snapshot 11-11, real fee structure, how to use and withdraw.
+https://btcetfflows.com/papertrade/ - Papertrade: Hyperliquid-ecosystem derivatives protocol, $1.01M fees in 24h (+99% d/d), +779% weekly, PSTR token mechanism explained.
+https://btcetfflows.com/spin-spin-agentfi-robinhood/ - Spin (SPIN): AgentFi token on Robinhood Chain, listing-day +9,335% 24h move, where it trades, how to buy, risks.
+https://btcetfflows.com/elysium/ - Elysium: Kinetiq's Hyperliquid L2 (mainnet 11-09), ~100ms blocks, HYPE gas, bridge walkthrough, launch-week snapshot and risks.
+https://btcetfflows.com/eqx-tokenized-stocks-hyperliquid/ - EQX tokenized stocks on Hyperliquid: SpaceX, NVIDIA, Meta, Tesla, Micron as 24/7 on-chain tokens; mechanics and dual-source prices.
+https://btcetfflows.com/ondo-finance-mag7x/ - Ondo Finance MAG7X: one token tracking seven Mag-7 tech stocks plus IBIT and ETHA, 24/7 on Ethereum, BNB Chain and Solana; price and holdings.
+https://btcetfflows.com/japansol/ - japanSOL: Japan-focused Solana LST (Sanctum/Jupiter), TVL $6.8M to $21.2M in ten days; mechanism, risks, FAQ.
+https://btcetfflows.com/japansol-staking-guide/ - How to stake SOL for japanSOL: Sanctum staking route and Jupiter market route, step by step with exit path and copycat-token warning.
+https://btcetfflows.com/japansol-tvl/ - japanSOL TVL & price data: $21,176,205, +74% in 7 days, daily TVL history, refreshed hourly.
+https://btcetfflows.com/gamma-research/ - Gamma Research: the Monad risk curator behind the $21.71M earnAUSD vault; what it does, how to enter, the risks.
+https://btcetfflows.com/gamma-research-tvl/ - Gamma Research TVL & APY: $21.71M (DefiLlama) vs $26.0M (TradingStrategy) dual-caliber reconciliation, 72-point history, hourly.
+https://btcetfflows.com/ton-gram-rebrand/ - Toncoin rebranded to Gram (GRAM): 1:1 conversion, migration timeline, what stays the same, and how to buy GRAM.
+https://btcetfflows.com/cbucks-cartoon-money/ - CBUCKS (Cartoon Money) Solana meme coin: price $0.004538, mcap $4.276M, -27.1% in 24h then +9.9% bounce, how to buy.
 
 Last updated: 2026-11-12

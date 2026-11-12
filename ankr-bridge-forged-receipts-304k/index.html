@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=GTM-5KKRD5M3"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","GTM-5KKRD5M3");</script>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ankr Bridge Forged Receipts: How Valid Signatures Drained $304,500</title>
+<meta name="description" content="On November 9, 2026, an attacker pulled $304,500 from Ankr Bridge using five forged withdrawal receipts [SlowMist + Blockaid, dual-source verified]. The…">
+<meta name="keywords" content="ankr bridge hack, forged withdrawal receipts, ankr bridge $304k, ankr bridge safe now, optimistic bridge replay attack">
+<link rel="canonical" href="https://btcetfflows.com/ankr-bridge-forged-receipts-304k/">
+<meta property="og:site_name" content="BTC ETF Flows">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://btcetfflows.com/ankr-bridge-forged-receipts-304k/">
+<meta property="og:title" content="Ankr Bridge Forged Receipts: How Valid Signatures Drained $304,500">
+<meta property="og:description" content="On November 9, 2026, an attacker pulled $304,500 from Ankr Bridge using five forged withdrawal receipts [SlowMist + Blockaid, dual-source verified]. The…">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Ankr Bridge Forged Receipts: How Valid Signatures Drained $304,500">
+<meta name="twitter:description" content="On November 9, 2026, an attacker pulled $304,500 from Ankr Bridge using five forged withdrawal receipts [SlowMist + Blockaid, dual-source verified]. The…">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="site"><div class="wrap head-inner">
+<a class="brand" href="/">BTC ETF Flows</a>
+<nav>
+<a href="/ibit/">IBIT</a>
+<a href="/ibit-etf-flows/">ETF Flows</a>
+<a href="/bitmine-bmnr/">BitMine</a>
+<a href="/bitmine-bmnr-price/">BMNR Price</a>
+<a href="/august-digital-tvl-surge/">August Digital</a>
+</nav>
+</div></header>
+<main class="wrap">
+<article>
+<h1>Ankr Bridge Forged Receipts: How Valid Signatures Drained $304,500</h1>
+<p><strong>Written by Crypto Desk</strong> · Last verified: 2026-11-12 00:00 UTC</p>
+<p>On November 9, 2026, an attacker pulled <strong>$304,500</strong> from Ankr Bridge using <strong>five forged withdrawal receipts</strong> [SlowMist + Blockaid, dual-source verified]. The signatures on those receipts were cryptographically <em>valid</em> — the bridge simply never checked whether the deposit event each receipt pointed to had already been spent. That distinction — valid signature, unspent-check missing — is the whole story, and it is the part worth reading twice.</p>
+<blockquote><p><strong>[CTA-1 · Affiliate — first screen]</strong> Have you ever bridged through Ankr? [BUTTON placeholder — free bridge-exposure self-check tool] · [BUTTON placeholder — partner exchange account for risk-diversified custody]</p></blockquote>
+<h2>Mechanism Deep Dive: What a "Forged Receipt" Actually Is</h2>
+<p>Bridges that use an optimistic or receipt-based model work like this: you deposit on chain A, a receipt is produced, and the bridge mints or releases funds on chain B against that receipt. The security assumption is: <strong>one deposit event → one spent receipt.</strong></p>
+<p>The Ankr incident broke exactly that assumption:</p>
+<ol><li><strong>One real deposit, five receipts.</strong> The attacker produced five forged withdrawal receipts, and all five pointed at the <em>same</em> legitimate Optimism deposit [SlowMist + Blockaid].</li><li><strong>The signatures checked out.</strong> Each receipt carried valid signature data, so a naive verification path — "does this signature match the depositor?" — passes.</li><li><strong>The missing check was the spend state.</strong> The bridge did not verify that the underlying deposit event had not already been redeemed. In database terms, the receipt table was keyed to a deposit that was already marked spent — but the bridge's check path never looked at that column.</li><li><strong>Result:</strong> $304,500 released against five claims on one deposit [SlowMist].</li></ol>
+<p><strong>Why this page survives the news cycle:</strong> this is not "private keys were stolen." This is a <em>logic bug in receipt lifecycle handling</em> — the same bug class shows up in claim systems, airdrop portals, and any flow where "proof of X" can be presented more than once. Understanding it makes you better at evaluating every bridge and claim you ever touch.</p>
+<blockquote><p><strong>[CTA-2 · Ad slot — mid page]</strong> [AD PLACEHOLDER — in-article responsive unit, below this section]</p></blockquote>
+<h2>Timeline</h2>
+<div class="table-wrap"><table><thead><tr><th>Date</th><th>Event</th><th>Source</th></tr></thead><tbody><tr><td>11-09</td><td>Exploit executed: 5 forged receipts, one Optimism deposit</td><td>SlowMist, Blockaid</td></tr><tr><td>11-09</td><td>Blockaid first public disclosure</td><td>Blockaid</td></tr><tr><td>11-09 → 11-12</td><td>SlowMist forensic breakdown; $304,500 figure confirmed on two counts</td><td>SlowMist</td></tr></tbody></table></div>
+<h3>Same-week security cluster (context, single-source items)</h3>
+<p>The Ankr incident landed in a 72-hour window that already contained: the <strong>tBTC</strong> nine-day withdrawal pause (began 10-30, attributed to a Linux kernel RCE vulnerability) [tBTC project], the <strong>KelpDAO</strong> lawsuit against <strong>LayerZero</strong> [court filing], and <strong>Aave</strong> freezing $120M in reserves [Aave announcement]. These are separate incidents — the cluster matters because it shaped how quickly "bridge" became a fear word this week.</p>
+<h2>Self-Check: Did I Bridge Through Ankr?</h2>
+<ol><li><strong>Pull your Ankr Bridge history</strong> (in-app or on-chain): list every deposit and every completed withdrawal.</li><li><strong>Match deposits to withdrawals 1:1.</strong> If one deposit produced more than one completed withdrawal, that is the fingerprint of this exploit — collect the tx hashes.</li><li><strong>Check pending receipts.</strong> Any withdrawal still in-flight after 11-09 is worth flagging; the team has been processing claims.</li><li><strong>Keep screenshots and tx hashes.</strong> Claim processes run on evidence; an on-chain hash is the strongest form.</li><li><strong>Don't bridge again through the same path</strong> until you have read the team's post-incident update on the spend-state check.</li></ol>
+<h2>FAQ</h2>
+<p><strong>How much was stolen?</strong> $304,500 [SlowMist, confirmed by Blockaid].</p>
+<p><strong>Were the attacker's signatures fake?</strong> No — the signatures were valid. The bridge's missing check was on the <em>deposit's spent state</em>, not on signature authenticity [SlowMist].</p>
+<p><strong>Why five receipts?</strong> Because five claims on one deposit yielded five releases. The count of five is a forensic detail that ties directly to the single-deposit mechanism [SlowMist].</p>
+<p><strong>Is Ankr Bridge safe now?</strong> The specific receipt lifecycle bug is identified; whether the spend-state check is enforced everywhere the model is used is what the post-incident update will answer. Until you have read it, treat new bridges as "check the team's response first."</p>
+<p><strong>How is this different from the Binance heist?</strong> Different bug class: Binance was a coordinated multi-chain sweep of ~$6.3B [TRM Labs + Chainalysis]; Ankr was a single-logic exploit of $304,500. Size is not the lesson — the missing invariant is.</p>
+<h2>Sources</h2>
+<ul><li>SlowMist — forensic report, $304,500 figure (dual-source verified with Blockaid, 2026-11-12)</li><li>Blockaid — first public disclosure, 11-09</li><li>tBTC project, KelpDAO court filing, Aave announcement — same-week cluster context (single-source items; verify before quoting their numbers)</li></ul>
+<h2>What Is Not Included</h2>
+<p>This page does not include Ankr's compensation or claim process (team still processing), attacker fund tracking, or an analysis of the post-incident update on the spend-state check — none published at verification time. The same-week cluster items (tBTC, KelpDAO, Aave) are single-source context, not full incident reports.</p>
+<h2>相关内页</h2>
+<ul><li><a href="/binance-6-3b-north-korea-heist/">Binance $6.3B North Korea Heist: Full Timeline, Impact, and Self-Check Guide</a></li><li><a href="/across-protocol-domain-hijack-348k/">Across Protocol Domain Hijack: $348K Drained From 9 Wallets in 3 Hours</a></li><li><a href="/august-digital-tvl-surge/">August Digital TVL Surge: What Is August Digital and Why TVL Hit a Record</a></li><li><a href="/cbucks-cartoon-money/">CBUCKS (Cartoon Money) Price, What Is CBUCKS, and How to Buy</a></li></ul>
+<blockquote><p><strong>NFA (Not Financial Advice):</strong> This page is informational. Core figures were verified against two independent sources on 2026-11-12; cluster context items are single-source and marked as such. Nothing here is a promise of refund, compensation, or bridge safety. Keep your own tx-hash evidence before relying on any claim process.</p></blockquote>
+</article>
+</main>
+<footer>
+<div class="wrap foot-inner">
+<p><strong>BTC ETF Flows</strong> · Data: Farside/DefiLlama/The Block/official filings · NFA — not financial advice · © 2026</p>
+<p>API: <a href="https://api.percall.io" target="_blank" rel="noopener">api.percall.io</a> (keyless, pay-per-call in USDC)</p>
+<p class="ai-note">For AI crawlers: <a href="/llms.txt">llms.txt</a> · <a href="/sitemap.xml">sitemap.xml</a> — GPTBot, OAI-SearchBot, PerplexityBot, ClaudeBot &amp; Googlebot welcome (see robots.txt)</p>
+</div>
+</footer>
+</body>
+</html>
