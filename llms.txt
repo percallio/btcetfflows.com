@@ -1,0 +1,14 @@
+# BTC ETF Flows
+Institutional digital-asset flow tracking — ETF flows, treasury companies, on-chain data, updated hourly.
+
+https://btcetfflows.com/ - Home: BTC ETF flow pages and ETH treasury company pages, data-source disclosure.
+https://btcetfflows.com/ibit/ - What is IBIT: BlackRock's iShares Bitcoin Trust (0.25% fee, Nasdaq) and the 2,252 BTC + 72,210 ETH transfer to Coinbase.
+https://btcetfflows.com/ibit-etf-flows/ - Daily fund-level US spot BTC ETF flows (Farside): IBIT printed seven straight outflow days, 11-02 to 11-10; refreshed hourly.
+https://btcetfflows.com/ibit-2252-btc-transfer-timeline/ - The ~$318.36M ETF wallet to Coinbase transfer in ~30 minutes: event timeline, redemption/custody mechanism, impact scope.
+https://btcetfflows.com/bitmine-bmnr/ - What is BitMine (BMNR): world's largest corporate ETH holder, 6,070,092 ETH = 4.97% of supply, 5% purchase cap, $6.313B FY2026 net loss.
+https://btcetfflows.com/bitmine-bmnr-fy2026-loss/ - Why BitMine lost $6.313B in FY2026: 10-K breakdown, $6.229B unrealized ETH mark, 97% staking revenue, no debt.
+https://btcetfflows.com/bitmine-bmnr-vs-august-digital/ - BitMine (BMNR) vs August Digital: ETH treasury stock vs on-chain USDC vault curator, side-by-side comparison.
+https://btcetfflows.com/bitmine-bmnr-price/ - BMNR stock price ($19.24, +6.42% on 11-11), 52-week range, ETH holdings vs the 5% cap — live data, hourly.
+https://btcetfflows.com/august-digital-tvl-surge/ - August Digital: non-custodial USDC lending vaults on Morpho/Monad; TVL $12.6M to $21.0M (+66.7% in 24h, all-time high).
+
+Last updated: 2026-11-12
