@@ -31,5 +31,6 @@ https://btcetfflows.com/gamma-research-tvl/ - Gamma Research TVL & APY — answe
 https://btcetfflows.com/ton-gram-rebrand/ - Toncoin → Gram (GRAM) rebrand — answers: how to convert (1:1), migration timeline, what stays the same, how to buy GRAM.
 https://btcetfflows.com/cbucks-cartoon-money/ - CBUCKS (Cartoon Money) — answers: what is it (Solana meme coin), price ($0.004538), mcap ($4.276M), -27.1% in 24h then +9.9% bounce, how to buy.
 https://btcetfflows.com/digest/ - BTC ETF Flows Weekly — answers: where to get the free weekly digest (7-day ETF flow table, treasury company moves, 3 things to watch, Buttondown signup).
+https://btcetfflows.com/subscribe/ - Data subscription ($20–$50/mo) — answers: how to get API access to the flow data (plans Starter/Pro/Full, payment in USDT-TRC20 / USDC-EVM / USDC-Solana with memo = email + plan, 4-step payment verification, refund policy, no-login API-key identity), what the free tier is (etf-flows.json, 100 requests/day), what alerts include (IBIT >$300M single-day, treasury 5% cap, major exchange events), the dedicated hourly dashboard (/dash/key.html on the top plan).
 
 Last updated: 2026-11-12

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=GTM-5KKRD5M3"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","GTM-5KKRD5M3");</script>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BTC ETF Flows — Data Subscription: API Access, Real-Time Alerts, Dashboard (USDT/USDC or Card, $20–$50/mo)</title>
+<meta name="description" content="Subscribe to the btcetfflows.com data layer: a personal API key, all /data endpoints, real-time flow alerts (IBIT &gt;$300M single-day, treasury 5% cap triggers, major exchange events) and a dedicated hourly dashboard. Pay in USDT-TRC20, USDC-EVM, USDC-Solana — card coming soon. No login: your API key is your identity.">
+<meta name="keywords" content="btc etf flows api, ibit flow data subscription, etf flows alerts, blackrock ibit dashboard, crypto data api usdt, etf flow dashboard">
+<link rel="canonical" href="https://btcetfflows.com/subscribe/">
+<meta property="og:site_name" content="BTC ETF Flows">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://btcetfflows.com/subscribe/">
+<meta property="og:title" content="BTC ETF Flows — Data Subscription: API Access, Real-Time Alerts, Dashboard">
+<meta property="og:description" content="Personal API key, all /data endpoints, real-time flow alerts and a dedicated hourly dashboard. Pay in USDT/USDC (TRC20 recommended) or card. $20–$50/mo.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="BTC ETF Flows — Data Subscription: API Access, Real-Time Alerts, Dashboard">
+<meta name="twitter:description" content="Personal API key, all /data endpoints, real-time flow alerts and a dedicated hourly dashboard. Pay in USDT/USDC or card. $20–$50/mo.">
+<link rel="stylesheet" href="/style.css">
+<style>
+/* scoped: subscription plans (this page only) */
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin:20px 0 8px;align-items:stretch}
+.plan{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:18px 16px 14px;position:relative;display:flex;flex-direction:column}
+.plan.hot{border-color:#f0b429;box-shadow:0 0 0 1px #f0b429}
+.ribbon{position:absolute;top:-11px;right:14px;background:#f0b429;color:#0d1117;font-size:11.5px;font-weight:700;border-radius:999px;padding:2px 10px;letter-spacing:.3px}
+.plan .pn{font-size:15px;font-weight:700;letter-spacing:.3px}
+.plan .pr{font-size:30px;font-weight:800;margin:6px 0 2px;color:var(--text)}
+.plan .pr span{font-size:14px;color:var(--muted);font-weight:500}
+.plan .ps{font-size:12.5px;color:var(--muted);margin:0 0 4px}
+.plan ul{margin:10px 0;padding-left:18px;list-style:none}
+.plan li{font-size:13.5px;color:var(--muted);line-height:1.5;margin:6px 0;padding-left:16px;position:relative}
+.plan li::before{content:"✓";position:absolute;left:0;color:var(--accent)}
+.plan li.more{color:var(--text);font-weight:600}
+.paybox{margin-top:12px;border-top:1px dashed var(--border);padding-top:10px}
+.paybox .pt{font-size:13.5px;font-weight:700;margin:4px 0 8px}
+.chain{margin:12px 0 4px;font-size:13px}
+.chain .ct{font-weight:700}
+.chain .ct .rec{color:#f0b429;font-size:11.5px;font-weight:700}
+.addr{display:block;background:#0d1117;border:1px solid var(--border);border-radius:6px;padding:8px 10px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11.5px;word-break:break-all;margin:6px 0;line-height:1.45}
+.note{font-size:12.5px;color:var(--muted);margin:6px 0}
+.paygrid{display:grid;grid-template-columns:148px 1fr;gap:12px;align-items:start}
+.paygrid img.qr{width:148px;height:148px;border:6px solid #fff;border-radius:8px;background:#fff}
+.card-btn{display:inline-block;background:#1f6feb;color:#fff;padding:10px 18px;border-radius:6px;font-size:14px;font-weight:600;cursor:not-allowed;opacity:.72;margin-top:10px}
+.card-btn:hover{opacity:.85}
+@media (max-width:600px){.paygrid{grid-template-columns:1fr}.paygrid img.qr{margin:0 auto}}
+</style>
+</head>
+<body>
+<header class="site"><div class="wrap head-inner">
+<a class="brand" href="/">BTC ETF Flows</a>
+<nav>
+<a href="/ibit/">IBIT</a>
+<a href="/ibit-etf-flows/">ETF Flows</a>
+<a href="/bitmine-bmnr/">BitMine</a>
+<a href="/bitmine-bmnr-price/">BMNR Price</a>
+<a href="/august-digital-tvl-surge/">August Digital</a>
+</nav>
+</div></header>
+<main class="wrap">
+<article>
+<h1>Data Subscription</h1>
+<p><strong>API access, real-time alerts, dedicated dashboard</strong> · Written by Crypto Desk · Last verified: 2026-11-12</p>
+<div class="answer-box">
+<p><strong>How it works:</strong> no login — <strong>your API key is your identity</strong>. Pay on-chain (USDT-TRC20 recommended, USDC on EVM/Solana) or by card (coming soon). A background daemon watches the receiving wallets every 30 minutes, flags new payments, and we verify + issue your key by email within 1–24h. Monthly billing, cancel anytime.</p>
+</div>
+
+<h2>Plans</h2>
+<div class="plans">
+
+<div class="plan">
+<div class="pn">Starter</div>
+<div class="pr">$20<span>/mo</span></div>
+<p class="ps">For individuals pulling data into their own scripts</p>
+<ul>
+<li>Personal API key</li>
+<li>All <code>/data</code> endpoints</li>
+<li>1,000 requests/day</li>
+<li>Email support</li>
+</ul>
+<div class="paybox">
+<div class="pt">How to pay — $20.00</div>
+<div class="chain"><span class="ct">USDT-TRC20 <span class="rec">recommended · default chain</span></span>
+<div class="paygrid"><img class="qr" src="qr/tron.png" alt="USDT-TRC20 receiving address QR">
+<div><span class="addr">TPP4ih49YTzUR6MDss1GgdSXeGk8hzMmFY</span>
+<p class="note">Send exactly <strong>20.00 USDT</strong>. In the transfer <strong>memo/remark field</strong> put <strong>your email + plan</strong> (e.g. <code>you@example.com starter</code>).</p>
+</div></div></div>
+<div class="chain"><span class="ct">USDC-EVM (Ethereum &amp; EVM chains)</span>
+<div class="paygrid"><img class="qr" src="qr/evm.png" alt="USDC-EVM receiving address QR">
+<div><span class="addr">0x931cb46345b4afa072a21757c67acd57a26a66</span>
+<p class="note">Same rule: <strong>20.00 USDC</strong>, memo = email + plan.</p>
+</div></div></div>
+<div class="chain"><span class="ct">USDC-Solana</span>
+<div class="paygrid"><img class="qr" src="qr/sol.png" alt="USDC-Solana receiving address QR">
+<div><span class="addr">CRJ8UDR8w3k6JhKVKVQyUBMzaUQv9JYQSXUzayo2QM2p</span>
+<p class="note"><strong>20.00 USDC</strong>. Solana has no memo field — email us the txid right after sending, with your email + plan.</p>
+</div></div></div>
+<div class="card-btn" title="Activates after KYC — on-chain is the fastest route until then">Pay by card — coming soon</div>
+<p class="note">Card payment runs on Waffo and activates after KYC. Until then, on-chain is the default.</p>
+</div>
+</div>
+
+<div class="plan hot">
+<div class="ribbon">RECOMMENDED</div>
+<div class="pn">Pro</div>
+<div class="pr">$35<span>/mo</span></div>
+<p class="ps">Everything in Starter, plus the alerts that matter</p>
+<ul>
+<li class="more">Everything in Starter</li>
+<li>Real-time alert emails:</li>
+<li>IBIT single-day flow &gt; $300M</li>
+<li>Treasury-company 5% purchase-cap triggers</li>
+<li>Major exchange events</li>
+</ul>
+<div class="paybox">
+<div class="pt">How to pay — $35.00</div>
+<div class="chain"><span class="ct">USDT-TRC20 <span class="rec">recommended · default chain</span></span>
+<div class="paygrid"><img class="qr" src="qr/tron.png" alt="USDT-TRC20 receiving address QR">
+<div><span class="addr">TPP4ih49YTzUR6MDss1GgdSXeGk8hzMmFY</span>
+<p class="note">Send exactly <strong>35.00 USDT</strong>. In the transfer <strong>memo/remark field</strong> put <strong>your email + plan</strong> (e.g. <code>you@example.com pro</code>).</p>
+</div></div></div>
+<div class="chain"><span class="ct">USDC-EVM (Ethereum &amp; EVM chains)</span>
+<div class="paygrid"><img class="qr" src="qr/evm.png" alt="USDC-EVM receiving address QR">
+<div><span class="addr">0x931cb46345b4afa072a21757c67acd57a26a66</span>
+<p class="note">Same rule: <strong>35.00 USDC</strong>, memo = email + plan.</p>
+</div></div></div>
+<div class="chain"><span class="ct">USDC-Solana</span>
+<div class="paygrid"><img class="qr" src="qr/sol.png" alt="USDC-Solana receiving address QR">
+<div><span class="addr">CRJ8UDR8w3k6JhKVKVQyUBMzaUQv9JYQSXUzayo2QM2p</span>
+<p class="note"><strong>35.00 USDC</strong>. Solana has no memo field — email us the txid right after sending, with your email + plan.</p>
+</div></div></div>
+<div class="card-btn" title="Activates after KYC — on-chain is the fastest route until then">Pay by card — coming soon</div>
+<p class="note">Card payment runs on Waffo and activates after KYC. Until then, on-chain is the default.</p>
+</div>
+</div>
+
+<div class="plan">
+<div class="pn">Full</div>
+<div class="pr">$50<span>/mo</span></div>
+<p class="ps">The whole desk, on your own page</p>
+<ul>
+<li class="more">Everything in Pro</li>
+<li>Dedicated dashboard <code>/dash/yourkey.html</code></li>
+<li>Dashboard refreshes hourly</li>
+<li>Priority support</li>
+</ul>
+<div class="paybox">
+<div class="pt">How to pay — $50.00</div>
+<div class="chain"><span class="ct">USDT-TRC20 <span class="rec">recommended · default chain</span></span>
+<div class="paygrid"><img class="qr" src="qr/tron.png" alt="USDT-TRC20 receiving address QR">
+<div><span class="addr">TPP4ih49YTzUR6MDss1GgdSXeGk8hzMmFY</span>
+<p class="note">Send exactly <strong>50.00 USDT</strong>. In the transfer <strong>memo/remark field</strong> put <strong>your email + plan</strong> (e.g. <code>you@example.com full</code>).</p>
+</div></div></div>
+<div class="chain"><span class="ct">USDC-EVM (Ethereum &amp; EVM chains)</span>
+<div class="paygrid"><img class="qr" src="qr/evm.png" alt="USDC-EVM receiving address QR">
+<div><span class="addr">0x931cb46345b4afa072a21757c67acd57a26a66</span>
+<p class="note">Same rule: <strong>50.00 USDC</strong>, memo = email + plan.</p>
+</div></div></div>
+<div class="chain"><span class="ct">USDC-Solana</span>
+<div class="paygrid"><img class="qr" src="qr/sol.png" alt="USDC-Solana receiving address QR">
+<div><span class="addr">CRJ8UDR8w3k6JhKVKVQyUBMzaUQv9JYQSXUzayo2QM2p</span>
+<p class="note"><strong>50.00 USDC</strong>. Solana has no memo field — email us the txid right after sending, with your email + plan.</p>
+</div></div></div>
+<div class="card-btn" title="Activates after KYC — on-chain is the fastest route until then">Pay by card — coming soon</div>
+<p class="note">Card payment runs on Waffo and activates after KYC. Until then, on-chain is the default.</p>
+</div>
+</div>
+
+</div>
+
+<h2>How payment works (4 steps)</h2>
+<ol>
+<li><strong>Choose a plan</strong> — Starter / Pro / Full.</li>
+<li><strong>Transfer</strong> — send exactly the plan price in USDT (or USDC on EVM/Solana) to the address of your chosen chain, and write <strong>your email + plan</strong> in the memo/remark field (e.g. <code>you@example.com pro</code>). No memo = we can't match the payment to you.</li>
+<li><strong>Confirmation email (1–24h)</strong> — a background daemon watches the receiving wallets every 30 minutes and flags new on-chain payments; we verify amount + memo by hand and email you the confirmation.</li>
+<li><strong>Key + alerts</strong> — you receive your personal API key by email, and your email is added to the alert list. Full plan: your dashboard is generated at <code>/dash/yourkey.html</code> on the next hourly refresh.</li>
+</ol>
+
+<h2>Try it free first</h2>
+<p><a href="/data/etf-flows.json">/data/etf-flows.json</a> is open: the daily US spot BTC ETF flow table as JSON (ISO dates, US$m, negative = outflow, status complete/pending, seven-day net). <strong>Free tier = etf-flows.json, 100 requests/day</strong>, no key required. Paid plans unlock the full <code>/data</code> endpoint set with per-key rate limits (1,000 requests/day on every plan; per-key enforcement via Cloudflare Worker from v2).</p>
+
+<h2>Refund policy</h2>
+<p>Monthly billing, <strong>refund anytime</strong>: we refund pro-rated by the remaining days of your cycle, paid in <strong>USDT</strong> to the address you paid from (same network). One email is enough — include your API key or paying address.</p>
+
+<h2>Related pages</h2>
+<ul>
+<li><a href="/ibit-etf-flows/">IBIT ETF Flow: BlackRock iShares Bitcoin Trust Daily Inflows &amp; Outflows (Updated Hourly)</a></li>
+<li><a href="/digest/">BTC ETF Flows Weekly — free email digest (7-day flow table, treasury moves, 3 things to watch)</a></li>
+<li><a href="/">BTC ETF Flows — home</a></li>
+</ul>
+
+<blockquote><strong>NFA (Not Financial Advice):</strong> You are paying for data delivery — the flow figures, the alert triggers and the dashboard are reporting what happened, not predicting what happens next. Prices in USD; on-chain settlement in USDT/USDC.</blockquote>
+</article>
+</main>
+<footer>
+<div class="wrap foot-inner">
+<p><strong>BTC ETF Flows</strong> · Data: Farside/DefiLlama/The Block/official filings · NFA — not financial advice · © 2026</p>
+<p>API: <a href="https://api.percall.io" target="_blank" rel="noopener">api.percall.io</a> (keyless, pay-per-call in USDC)</p>
+<p class="ai-note">For AI crawlers: <a href="/llms.txt">llms.txt</a> · <a href="/sitemap.xml">sitemap.xml</a> — GPTBot, OAI-SearchBot, PerplexityBot, ClaudeBot &amp; Googlebot welcome (see robots.txt)</p>
+</div>
+</footer>
+</body>
+</html>
