@@ -1,7 +1,7 @@
 {
  "schema": "btcetfflows/etf-flows/v1",
  "source": "Farside Investors (farside.co.uk/btc)",
- "as_of": "2026-11-12T16:36:39Z",
+ "as_of": "2026-11-12T16:42:20Z",
  "complete_through": "2026-11-11",
  "unit": "USD millions",
  "convention": "negative = outflow",
