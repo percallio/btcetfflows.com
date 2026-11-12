@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=GTM-5KKRD5M3"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","GTM-5KKRD5M3");</script>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Initia Cloud-Credential Breach: $3.27M via Forged Rollup Withdrawals</title>
+  <meta property="og:image" content="https://btcetfflows.com/og/initia-cloud-credential-breach.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+<meta name="description" content="On 9 November 2026 a compromised Google Cloud key let an attacker forge IBC withdrawals from five Initia rollups, moving $3.27M — $2.16M frozen on the paused L1. Second attack in…">
+<meta name="keywords" content="Initia hack, Initia cloud key breach, INITIA price, Initia rollup forged withdrawal, Initia L1 halted, $3.27M Initia, Initia IBC escrow">
+<link rel="canonical" href="https://btcetfflows.com/initia-cloud-credential-breach/">
+<meta property="og:site_name" content="BTC ETF Flows">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://btcetfflows.com/initia-cloud-credential-breach/">
+<meta property="og:title" content="Initia Cloud-Credential Breach: $3.27M via Forged Rollup Withdrawals">
+<meta property="og:description" content="On 9 November 2026 a compromised Google Cloud key let an attacker forge IBC withdrawals from five Initia rollups, moving $3.27M — $2.16M frozen on the paused L1. Second attack in…">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Initia Cloud-Credential Breach: $3.27M via Forged Rollup Withdrawals">
+<meta name="twitter:description" content="On 9 November 2026 a compromised Google Cloud key let an attacker forge IBC withdrawals from five Initia rollups, moving $3.27M — $2.16M frozen on the paused L1. Second attack in…">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="site"><div class="wrap head-inner">
+<a class="brand" href="/">BTC ETF Flows</a>
+<nav>
+<a href="/ibit/">IBIT</a>
+<a href="/ibit-etf-flows/">ETF Flows</a>
+<a href="/bitmine-bmnr/">BitMine</a>
+<a href="/bitmine-bmnr-price/">BMNR Price</a>
+<a href="/august-digital-tvl-surge/">August Digital</a>
+</nav>
+</div></header>
+<main class="wrap">
+<article>
+<h1>Initia Cloud-Credential Breach: $3.27M via Forged Rollup Withdrawals</h1>
+<p><strong>Written by Crypto Desk</strong> · Last verified: 2026-11-13 (disclosure cycle 11-09 → 11-12, data pulled 2026-11-12 17:49–18:10 UTC)</p>
+<div class="answer-box">
+<p><strong>Answer (as of 2026-11-12 18:10 UTC):</strong></p>
+<p>On <strong>9 November 2026</strong> an attacker used a <strong>compromised Google Cloud Platform key (command injection)</strong> to reach Initia's infrastructure, then <strong>forged IBC withdrawals from five rollups</strong>, moving about <strong>$3.27M</strong> to attacker addresses on Initia L1 — of which about <strong>$2.16M remains frozen on the paused chain</strong> (the two figures are the same money at different stages, not two losses). It is the <strong>second exploit in under three weeks</strong> — the first, on 23 October, took ~$2.7M via a MoveVM script-cache bug — and the L1 has now been <strong>halted twice in a month</strong> (second halt 06:18 UTC on 11-10). INITIA traded at <strong>$0.1129 (CG rank 704), -23.2% over 24h</strong>, $24.8M market cap, $62.9M volume, -92.1% from its ATH. Initia says it will restore the backing of affected assets in full.</p>
+</div>
+<p>This page is the security-cluster record for the event: the timeline, the attack mechanics (the part that stays useful after the price noise), what the two dollar figures actually mean, a self-check for users, and the token data.</p>
+<blockquote><strong>[CTA-1 · Affiliate — first screen]</strong> Follow the security cluster: <a class="cta-btn" href="/ankr-bridge-forged-receipts-304k/">Ankr Bridge forged receipts — $304,500, same week</a> · <a class="cta-btn" href="/across-protocol-domain-hijack-348k/">Across domain hijack — self-check guide</a> · <a class="cta-btn" href="/">[affiliate: exchange — INIT trade entry]</a></blockquote>
+<h2>Timeline (UTC where given)</h2>
+<div class="table-wrap"><table><thead><tr><th>When</th><th>Event</th><th>Source</th></tr></thead><tbody>
+<tr><td>10-23</td><td>First exploit: MoveVM script-cache bug — malicious code bypassed security checks, created token balances without underlying backing, bridged out. ~$2.7M taken; network halted</td><td>CoinDesk (via KuCoin, 11-11)</td></tr>
+<tr><td>11-09</td><td>Breach: command injection via a compromised GCP key (used to provision private nodes) exposes environment variables → GitHub + GCP accounts → further credentials → access to Anvil (the rollup hosting platform) → forged IBC withdrawals validated from five rollups, unlocking L1 IBC escrow funds</td><td>Initia disclosure (via ForkLog, 11-11)</td></tr>
+<tr><td>11-10 06:18</td><td>L1 halted in coordination with validators after unauthorized transfers from escrow accounts are identified</td><td>CoinMarketCap (11-12)</td></tr>
+<tr><td>11-11 00:37</td><td>BlockBeats first relays the numbers: $3.27M moved, $2.16M frozen, full replenishment intent</td><td>BlockBeats</td></tr>
+<tr><td>11-11 08:26</td><td>CoinDesk report (via KuCoin): "second attack in three weeks," cash-out detail (13,400 TIA / 8,000 USDC.inj / 597K Noble USDC), no INIT withdrawn</td><td>CoinDesk (via KuCoin)</td></tr>
+<tr><td>11-11 → 11-12</td><td>ForkLog investigation detail; CMC: second halt, "restore backing in full"; rebuild in isolated environment, least-privilege access, hardened IBC validation</td><td>ForkLog / CMC</td></tr></tbody></table></div>
+<blockquote><strong>[Related trading entry]</strong> INIT trades on major CEXes; <a class="cta-btn" href="/">[affiliate: exchange — open account]</a> · <a class="cta-btn" href="/digest/">Get the weekly digest (events included)</a></blockquote>
+<h2>How the Attack Worked (mechanics — stays useful)</h2>
+<ol><li><strong>Entry: a provision key.</strong> The compromised GCP key was used for provisioning private nodes. Command injection on it exposed <em>environment variables</em> — the classic cloud-misconfig cascade.</li><li><strong>Credential chaining.</strong> The exposed variables opened the team's GitHub and GCP accounts, which yielded further credentials — one leaked variable can be a key ring.</li><li><strong>Reach: Anvil.</strong> With those credentials the attacker reached <strong>Anvil, the hosting platform for Initia's rollups</strong> — the off-chain control plane, not the on-chain consensus.</li><li><strong>The forgery: IBC.</strong> From there, <strong>forged IBC withdrawals from five rollups were validated</strong>, releasing assets held in the L1's IBC escrow accounts — money bridged <em>into</em> rollups, held in escrow on the L1.</li><li><strong>Cash-out at the rate limit.</strong> The attacker sold part of the loot on Initia's own DEX, then bridged out <strong>13,400 TIA, 8,000 USDC.inj and 597,000 Noble USDC</strong> — exactly at Initia's outbound IBC rate limits. <strong>No INIT was withdrawn.</strong></li></ol>
+<p>The pattern matters: the chain's consensus was never broken. The attack surface was <em>cloud infrastructure + a rollup host</em> — the same family of failure as the 10-23 MoveVM cache bug, just a different layer. For anyone operating a modular stack, the lesson is that the escrow's value is only as good as the off-chain control plane in front of it.</p>
+<h2>What the Two Dollar Figures Mean</h2>
+<p><strong>$3.27M</strong> = the total moved to the attacker's Initia L1 address. <strong>$2.16M</strong> = the part of that total still sitting on the paused L1, where it cannot be moved. The difference (~$1.1M) is what was already sold on the DEX or bridged out through the rate-limited IBC channels. All four sources (CoinDesk, BlockBeats, ForkLog, CMC) carry both numbers consistently — they are one amount at two stages, not two losses. Initia's stated remedy: <strong>"restore the backing of affected assets in full"</strong> (plan details still being finalized), infrastructure rebuilt from scratch in an isolated environment, least-privilege access enforced, onchain IBC validation hardened, law enforcement and security partners engaged. The team expects recovery to take longer than a regular restart; no timeline published yet.</p>
+<h2>User Self-Check (compact)</h2>
+<ol><li><strong>Did you bridge into an Initia rollup, or hold funds in a rollup whose assets settle in Initia L1 escrow?</strong> If yes — your funds are inside the affected escrow; the five affected rollups are not named in the public disclosure (awaiting verification), so check the rollup list on your bridge's status page after the restart.</li><li><strong>Do you hold INIT directly on the L1?</strong> The attacker withdrew no INIT — but the L1 was paused twice in a month, so unstaking/withdraw windows moved with the halts.</li><li>Keep screenshots of balances <em>before</em> the next restart, and watch the official channel (X) for the finalized replenishment plan before moving size.</li></ol>
+<h2>INITIA Token Snapshot <span class="refresh-badge">⏱ updated hourly</span></h2>
+<div class="table-wrap"><table><thead><tr><th>Metric</th><th>Value</th><th>Note</th></tr></thead><tbody>
+<tr><td>Price</td><td><strong>$0.1129</strong></td><td>CoinGecko (id <code>initia</code>), 11-12 18:10Z</td></tr>
+<tr><td>24h</td><td><strong>-23.2%</strong></td><td>The second-halt drop; -92.1% from ATH overall</td></tr>
+<tr><td>Market cap / volume</td><td>$24.8M / $62.9M</td><td>Rank 704 (CG)</td></tr></tbody></table></div>
+<p>Price note (flagged as required): INITIA is in a <strong>post-break-even decline</strong> — the token was already well below its 2025 TGE price level before this week, and the second halt in three weeks accelerated the fall (exact TGE print: awaiting verification, one pending item below).</p>
+<h2>Awaiting Verification (≤2)</h2>
+<ul><li><strong>TGE / break-even print:</strong> the exact 2025 TGE price for the "post-break-even" framing is not in this pull (pending — the -92.1% ATH figure is verified).</li><li><strong>Rollup names + replenishment plan:</strong> the five affected rollups are unnamed and the finalized "restore backing in full" plan (timing, mechanism) is not yet published, per all four sources.</li></ul>
+<h2>What Is Not Included</h2>
+<p>This page does not cover the 10-23 MoveVM exploit in depth (one timeline row only), Initia's economics/TVL, validator-side details of the two halts, or a forensic trace of the attacker wallets. It is the event + mechanics + self-check record for the 11-09 compromise.</p>
+<h2>Related pages</h2>
+<ul><li><a href="/across-protocol-domain-hijack-348k/">Across Protocol domain hijack — $348K from 9 wallets in 3 hours (11-10)</a></li><li><a href="/ankr-bridge-forged-receipts-304k/">Ankr Bridge forged receipts — $304,500 drained with valid signatures (11-09)</a></li><li><a href="/binance-6-3b-north-korea-heist/">Binance $6.3B North Korea heist — the largest theft in history, timeline + self-check</a></li><li><span class="soon">INITIA price page — hourly <em>(coming soon)</em></span></li></ul>
+<h2>Sources</h2>
+<ul><li>CoinDesk (via KuCoin), <strong>2026-11-11 08:26 (KuCoin server time)</strong>: $3.27M stolen, $2.16M frozen, GCP key + command injection, Anvil, five rollups, cash-out detail, 10-23 ~$2.7M context</li><li>BlockBeats (The BlockBeats), <strong>2026-11-11 00:37 UTC</strong>: $3.27M / $2.16M, full replenishment intent, 13,400 TIA / 8,000 USDC.inj / 597K Noble USDC, no INIT</li><li>ForkLog, <strong>2026-11-11</strong>: second hack in &lt;3 weeks; GCP key provisioned private nodes; environment variables → GitHub/GCP → Anvil → forged IBC; rebuild plan</li><li>CoinMarketCap news (M. Kusanagi), <strong>2026-11-12</strong>: halt at 06:18 UTC 11-10 in coordination with validators; second halt since 10-23; "restore backing in full"</li><li>CoinGecko API (id <code>initia</code>), <strong>2026-11-12 18:10 UTC</strong>: $0.1129, -23.2% 24h, $24.75M mc, $62.9M vol, rank 704, -92.1% ATH</li></ul>
+<blockquote><p><strong>NFA (Not Financial Advice):</strong> Both dollar figures are verified across four independent relays on 2026-11-13; they describe the same money at two stages. Nothing here is a promise of refund or recovery.</p></blockquote>
+<p><strong>Last verified: 2026-11-13</strong> (all figures pulled 2026-11-12 17:49–18:10 UTC; disclosure cycle 11-09 → 11-12)</p>
+</article>
+</main>
+<footer>
+<div class="wrap foot-inner">
+<p><strong>BTC ETF Flows</strong> · Data: Farside/DefiLlama/The Block/official filings · NFA — not financial advice · © 2026</p>
+<p>API: <a href="https://api.percall.io" target="_blank" rel="noopener">api.percall.io</a> (keyless, pay-per-call in USDC)</p>
+<p class="ai-note">For AI crawlers: <a href="/llms.txt">llms.txt</a> · <a href="/sitemap.xml">sitemap.xml</a> — GPTBot, OAI-SearchBot, PerplexityBot, ClaudeBot &amp; Googlebot welcome (see robots.txt)</p>
+</div>
+</footer>
+</body>
+</html>
