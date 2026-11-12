@@ -47,3 +47,10 @@ section.grid{margin-top:30px}
 .sources p{margin:8px 0;font-size:14.5px}
 .sources .fine{color:var(--muted);font-size:13px}
 @media (max-width:600px){.head-inner{justify-content:flex-start}nav a{margin-left:0;margin-right:12px}h1{font-size:23px}.hero h1{font-size:27px}table{min-width:480px}}
+
+/* --- production quality pass (refresh badges, chart placeholders, CTA buttons, pending flags) --- */
+.refresh-badge { font-size: 12px; color: #768390; background: #161b22; border: 1px solid #30363d; border-radius: 10px; padding: 2px 10px; margin-left: 10px; white-space: nowrap; }
+.chart-ph { border: 1px dashed #30363d; border-radius: 8px; padding: 28px 16px; text-align: center; color: #768390; font-size: 14px; margin: 18px 0; }
+.cta-btn { display: inline-block; background: #1f6feb; color: #fff; text-decoration: none; padding: 8px 14px; border-radius: 6px; font-size: 14px; font-weight: 500; margin: 4px 6px 4px 0; }
+.cta-btn:hover { background: #388bfd; }
+.pending-flag { color: #d29922; font-size: 11px; }
