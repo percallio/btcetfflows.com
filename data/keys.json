@@ -1,12 +1,11 @@
 {
-  "schema": "btcetfflows/keys/v1",
-  "note": "public key registry: key -> plan/expiry (endpoints rate-limited per docs; enforcement via CF Worker from v2)",
-  "keys": {
-    "demo": {
-      "plan": "free",
-      "expiry": null,
-      "created": "2026-11-12",
-      "email": null
-    }
+ "schema": "btcetfflows/keys/v1",
+ "note": "public key registry: key -> plan/expiry (customer email is private, not stored here). Endpoints rate-limited per docs; enforcement via CF Worker from v2.",
+ "keys": {
+  "demo": {
+   "plan": "free",
+   "expiry": null,
+   "created": "2026-11-12"
   }
+ }
 }
