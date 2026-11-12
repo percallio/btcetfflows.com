@@ -54,3 +54,5 @@ section.grid{margin-top:30px}
 .cta-btn { display: inline-block; background: #1f6feb; color: #fff; text-decoration: none; padding: 8px 14px; border-radius: 6px; font-size: 14px; font-weight: 500; margin: 4px 6px 4px 0; }
 .cta-btn:hover { background: #388bfd; }
 .pending-flag { color: #d29922; font-size: 11px; }
+.answer-box { border-left: 3px solid #58a6ff; background: #161b22; padding: 14px; margin: 16px 0; border-radius: 0 6px 6px 0; }
+.answer-box p { margin: 4px 0; }
