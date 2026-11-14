@@ -59,3 +59,5 @@ User-agent: cohere-ai
 Allow: /
 
 Sitemap: https://btcetfflows.com/sitemap.xml
+
+# IndexNow key: https://btcetfflows.com/5ed71eb30f70480f92d0baece6709740.txt
