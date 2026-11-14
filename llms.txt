@@ -55,3 +55,6 @@ Last updated: 2026-11-13
 - [Lighter (LIT) CFTC DCM/DCO filing + $137.67B Q3 volume](https://btcetfflows.com/lighter-cftc-lit/)
 - [Venice (VVV) AI-privacy token price/what-is](https://btcetfflows.com/venice-vvv-ai-privacy/)
 - [Figure Markets TVL $501.6M onchain equity network](https://btcetfflows.com/figure-markets-tvl/)
+- [ONDO token unlock schedule (next 2027-01-18; Jan 2026 was 1.94B/19.4%)](https://btcetfflows.com/ondo-token-unlock/)
+- [Pearl (PEARL) PUIW L1 — AI-compute proof-of-work, Token2049 buzz](https://btcetfflows.com/pearl-ai-bitcoin-token/)
+- [Akedo (AKE) multi-agent AI framework token, +269% 11-14, BNB Chain](https://btcetfflows.com/akedo-ake/)
