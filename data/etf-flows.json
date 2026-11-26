@@ -1,8 +1,8 @@
 {
  "schema": "btcetfflows/etf-flows/v1",
  "source": "Farside Investors (farside.co.uk/btc)",
- "as_of": "2026-11-25T13:15:14Z",
- "complete_through": "2026-11-24",
+ "as_of": "2026-11-26T05:15:07Z",
+ "complete_through": "2026-11-25",
  "unit": "USD millions",
  "convention": "negative = outflow",
  "rows": [
@@ -140,15 +140,15 @@
   },
   {
    "date": "2026-11-25",
-   "ibit": null,
-   "market": 0.0,
-   "status": "pending"
+   "ibit": -329.7,
+   "market": -453.0,
+   "status": "complete"
   }
  ],
  "seven_day_net": {
-  "from": "2026-11-16",
-  "to": "2026-11-24",
-  "ibit": -2052.1,
-  "market": -2591.1
+  "from": "2026-11-17",
+  "to": "2026-11-25",
+  "ibit": -2458.3,
+  "market": -3052.0
  }
 }
